@@ -1,0 +1,136 @@
+/* static/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    max-width: 800px; /* Ajustamos el ancho máximo del formulario a 800px */
+    margin: 20px auto;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Agregamos una clase para el segundo botón y ajustamos estilos */
+.ceB {
+    margin-top: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Aumentamos el radio del borde a 10px */
+}
+
+#success-message {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px auto; /* Centra el mensaje horizontalmente */
+    max-width: 400px; /* Limita el ancho del mensaje */
+    text-align: center; /* Centra el texto */
+    display: none; /* Inicialmente oculto */
+}
+
+/* Agrega animaciones de transición si es necesario */
+#success-message.hidden {
+    display: none !important;
+}
+
+/* Estilos generales para las tarjetas */
+.card-add {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 10px; /* Ajusta el radio del borde según tus preferencias */
+}
+
+/* Media query para pantallas grandes (min-width: 1357px) */
+@media (min-width: 1357px) {
+    .card-add {
+        width: 45%; /* Ajusta el ancho de las tarjetas */
+    }
+}
+
+/* Media query para iPad Pro (min-width: 1024px y max-width: 1356px) */
+@media (min-width: 1024px) and (max-width: 1356px) {
+    .card-add {
+        width: 55%; /* Ajusta el ancho de las tarjetas */
+    }
+}
+
+/* Media query para Tablet (min-width: 768px y max-width: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card-add {
+        width: 70%; /* Ajusta el ancho de las tarjetas */
+    }
+}
+
+/* Media query para Teléfono (max-width: 767px) */
+@media (max-width: 767px) {
+    .card-add {
+        width: 90%; /* Ajusta el ancho de las tarjetas */
+    }
+}
+
+/* Media query para iPhone XR (max-width: 414px) */
+@media (max-width: 414px) {
+    .card-add {
+        width: 90%; /* Ajusta el ancho de las tarjetas */
+    }
+}
+
+/* Media query para iPhone 12 Pro (max-width: 390px) */
+@media (max-width: 390px) {
+    .card-add {
+        width: 90%; /* Ajusta el ancho de las tarjetas */
+    }
+}
+
+/* Media query para iPhone SE (max-width: 375px) */
+@media (max-width: 375px) {
+    .card-add {
+        width: 90%; /* Ajusta el ancho de las tarjetas */
+    }
+}

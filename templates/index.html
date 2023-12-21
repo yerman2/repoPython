@@ -1,0 +1,28 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (otros elementos del encabezado) ... -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- <h1 class="title">Proyecto Flask</h1> -->
+
+    <form action="/get-file" method="post">
+        <label for="token_get">Token para Descargar Archivo:</label>
+        <input type="text" id="token_get" name="token_get" required>
+        <button type="submit">Descargar Archivo</button>
+    </form>
+
+    <form action="/process-file" method="post">
+        <label for="api_key">Token-Api para Añadir Stel Order:</label>
+        <input type="text" id="api_key" name="api_key" required>
+        <button type="submit" class="ceB">Añadir Productos</button>
+    </form>
+
+    <!-- Nuevo elemento para el mensaje de éxito -->
+    <div id="success-message" class="hidden">
+        Archivo descargado correctamente en la carpeta 'tarifas'.
+    </div>
+</body>
+</html>
